@@ -2,23 +2,16 @@
   "name": "vec",
   "esy": {
     "buildsInSource": "unsafe",
-    "build": [
-      "ln -sfn #{melange.install} node_modules/bs-platform"
-    ]
+    "build": [ "ln -sfn #{melange.install} node_modules/bs-platform" ]
   },
   "installConfig": {
     "pnp": false
   },
   "scripts": {
-    "watch": "esy b dune build @run_hello_bc -w",
-    "watch-bc": "esy b dune build @run_hello_bc -w",
-    "watch-js": "esy b dune build @run_hello_js -w",
-    "hello-reason":
-      "esy build dune exec node _build/default/HelloReason.bs.js",
-    "hello-rescript":
-      "esy build dune exec node _build/default/HelloRescript.bs.js",
-    "start": "esy b dune exec ./Hello.exe",
-    "start:node": "nodemon _build/default/Hello.bs.js"
+    "build": "esy bsb -clean-world;esy bsb -make-world",
+    "test": "node test/Test.bs.js",
+    "watch-js": "esy b dune build @run_test_js -w",
+    "watch-rescript": "esy b dune build @run_rescript_js -w"
   },
   "dependencies": {
     "@opam/ounit2": "2.2.4",

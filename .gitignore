@@ -5,12 +5,6 @@ _build/
 *.o
 *.out
 .vscode/
-_esy/default/installation.json
-_esy/default/pnp.js
-_esy/default/bin/command-env
-_esy/default/bin/command-exec
-_esy/default/bin/node
-_esy/default/cache/project-d16f485bc6a39c21c52ec2ccbcc55f1d
-_esy/default/store/b/vec-75802e00.lock
-node_modules/.cache/_esy/build/bin/command-env
-node_modules/.cache/_esy/build/bin/command-exec
+_esy/
+node_modules
+.melange.eobjs

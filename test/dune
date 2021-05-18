@@ -1,0 +1,45 @@
+(executable
+ (name Test)
+ (modes byte native))
+
+(rule
+ (alias run_test_bc)
+ (deps Test.bc)
+ (action
+  (run ./Test.bc)))
+
+(rule
+ (alias run_test)
+ (deps Test.exe)
+ (action
+  (run ./Test.exe)))
+
+(rule
+ (alias run_test_res_bc)
+ (deps TestRescript.bc)
+ (action
+  (run ./TestRescript.bc)))
+
+(rule
+ (alias run_test_res_exe)
+ (deps TestRescript.exe)
+ (action
+  (run ./TestRescript.exe)))
+
+(rule
+ (alias run_rescript_js)
+ (deps TestRescript.bs.js)
+ (action
+  (run node ./TestRescript.bs.js)))
+
+(rule
+ (alias run_test_js)
+ (deps Test.bs.js)
+ (action
+  (run node ./Test.bs.js)))
+
+(rule
+ (alias run_test_rescript)
+ (deps TestRescript.bs.js)
+ (action
+  (run node ./TestRescript.bs.js)))
