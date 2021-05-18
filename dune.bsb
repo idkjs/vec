@@ -1,19 +1,19 @@
 ;;;;{BSB GENERATED: NO EDIT
 (subdir ./test
 (rule
-(targets  TestRe.ast)
- (deps (:inputs  TestRe.re) )
+(targets  Test.ast)
+ (deps (:inputs  Test.re) )
 (action
  (run bsc  -w a  -absname -bs-ast -o %{targets} %{inputs}))
 (enabled_if (= %{ocaml_version} "4.12.0")) )
  (rule
-(targets  TestRe.cmj TestRe.cmi TestRe.cmt TestRe.bs.js)
- (mode (promote (until-clean) (only TestRe.bs.js)))(deps (:inputs  TestRe.ast)  (:ast_deps .././test/TestRe.ast ) ../bsconfig.json)
+(targets  Test.cmj Test.cmi Test.cmt Test.bs.js)
+ (mode (promote (until-clean) (only Test.bs.js)))(deps (:inputs  Test.ast)  (:ast_deps .././test/Test.ast ) ../bsconfig.json)
 (action
- (progn (dynamic-run bsb_helper -root /Users/mando/Github/vec -cwd ./test %{ast_deps}) (run bsc -bs-re-out -I ../src -I .    -w a -bs-package-name vec -bs-package-output commonjs:./test:.bs.js -o TestRe.cmj %{inputs})))
+ (progn (dynamic-run bsb_helper -root /Users/mando/Github/vec -cwd ./test %{ast_deps}) (run bsc -bs-re-out -I ../src -I .    -w a -bs-package-name vec -bs-package-output commonjs:./test:.bs.js -o Test.cmj %{inputs})))
 (enabled_if (= %{ocaml_version} "4.12.0")) )
  
-(alias (name bsb_world)(deps  TestRe.bs.js)
+(alias (name bsb_world)(deps  Test.bs.js)
 (enabled_if (= %{ocaml_version} "4.12.0"))))
 (subdir ./src
 (rule
