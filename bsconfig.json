@@ -1,11 +1,20 @@
 {
-    "name": "vec",
-    "sources": {
-      "dir" : "src"
+  "name": "vec",
+  "sources": [
+    {
+      "dir": "src"
     },
-    "suffix": ".bs.js",
-    "warnings": {
-      "number": "+A-42-48-44-4",
-      "error": "+A-3-102-103"
+    { "dir": "test" }
+  ],
+  "suffix": ".bs.js",
+  "warnings": {
+    "number": "+A-42-48-44-4",
+    "error": "+A-3-102-103"
+  },
+    "package-specs": [
+    {
+      "module": "commonjs",
+      "in-source": true
     }
+  ]
 }

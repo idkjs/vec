@@ -1,6 +1,14 @@
 {
   "name": "vec",
-  "esy": { "buildsInSource": "_build", "build": "dune build @all" },
+  "esy": {
+    "buildsInSource": "unsafe",
+    "build": [
+      "ln -sfn #{melange.install} node_modules/bs-platform"
+    ]
+  },
+  "installConfig": {
+    "pnp": false
+  },
   "scripts": {
     "watch": "esy b dune build @run_hello_bc -w",
     "watch-bc": "esy b dune build @run_hello_bc -w",
