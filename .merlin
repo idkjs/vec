@@ -1,0 +1,9 @@
+####{BSB GENERATED: NO EDIT
+FLG -ppx 'bsc -as-ppx '
+S /Users/mando/.esy/3__________________________________________________________________/i/melange-7d120d08/lib/melange
+B /Users/mando/.esy/3__________________________________________________________________/i/melange-7d120d08/lib/melange
+FLG -w +a-4-9-20-40-41-42-50-61-102+A-42-48-44-4-40-42-61
+S /Users/mando/Github/vec/./src
+B /Users/mando/Github/vec/_build/default/./src
+B /Users/mando/Github/vec/_build/default/.melange.eobjs
+####BSB GENERATED: NO EDIT}

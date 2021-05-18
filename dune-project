@@ -1,4 +1,5 @@
-(lang dune 2.8)
+(lang dune 2.7)
+(using action-plugin 0.1)
 (generate_opam_files true)
 
 (name vec)
@@ -15,7 +16,7 @@
   (synopsis "Fast, safe mutable dynamic arrays")
   (description "This library provides efficient dynamic arrays with Rust-like mutability permissions.")
   (depends
-    (dune (>= 2.8))
+    (dune (>= 2.7))
     (ocaml (>= "4.08.0"))
     (odoc :with-doc)
     (ounit2 :with-test)))

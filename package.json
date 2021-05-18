@@ -1,0 +1,25 @@
+{
+  "name": "vec",
+  "version": "1.0.0",
+  "description": "[![OPAM](https://img.shields.io/badge/dynamic/json?color=blue&label=OPAM&style=for-the-badge&logo=ocaml&prefix=v&query=version&url=https%3A%2F%2Fraw.githubusercontent.com%2Faionescu%2Fvec%2Fmain%2Fbadge%2Fversion.json)](https://opam.ocaml.org/packages/vec/)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idkjs/vec.git"
+  },
+  "keywords": [],
+  "author": "Alain Armand",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/idkjs/vec/issues"
+  },
+  "homepage": "https://github.com/idkjs/vec#readme"
+}
